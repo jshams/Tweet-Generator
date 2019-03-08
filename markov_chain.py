@@ -140,9 +140,14 @@ my_chain = Second_Order_Markov_Chain(str)
 print(my_chain)
 print(my_chain.random_sentence(15))
 
-f = open('frankenstein.txt' , 'r')
-file = [word for line in f.read().split('\n') for word in line.split(' ')]
-f.close()
+# f = open('frankenstein.txt' , 'r')
+# file = [word for line in f.read().split('\n') for word in line.split(' ')]
+# f.close()
+
+with open('ive.txt', 'r') as f:
+    contents = f.read()
+    contents.split()
+
 # print(f)
 my_long_chain = Second_Order_Markov_Chain(f)
 # print(my_long_chain)
